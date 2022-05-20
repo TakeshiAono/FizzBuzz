@@ -12,7 +12,7 @@ while loop_io
   if fizz_judge == 0
     if buzz_judge == 0
       puts "FizzBuzz"
-      next
+      # next
     else
       puts "Fizz"
     end
@@ -25,7 +25,7 @@ while loop_io
     end
   end
 
-  if i == 15
+  if i == 50
     break
   end
 
