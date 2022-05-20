@@ -2,27 +2,30 @@ loop_io = true
 i = 0
 
 while loop_io
-  puts i
   i+=1
-  fizz_judge = i/3
-  buzz_judge = i/5
+  fizz_judge = i % 3
+  buzz_judge = i % 5
 
-  if fizz_judge.integer?
-    if buzz_judge.integer?
+  # puts i
+  # puts fizz_judge.class
+
+  if fizz_judge == 0
+    if buzz_judge == 0
       puts "FizzBuzz"
+      next
     else
       puts "Fizz"
     end
-    
+
   else
-    if buzz_judge.integer?
+    if buzz_judge == 0
       puts "Buzz"
     else
       puts i
     end
   end
 
-  if i ==100
+  if i == 15
     break
   end
 
