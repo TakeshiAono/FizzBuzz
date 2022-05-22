@@ -35,14 +35,3 @@ end
 
 require 'minitest/autorun'
 
-class SampleTest < Minitest::Test
-  def test_FizzBuzz
-    assert_equal '1', FizzBuzz(1)
-    assert_equal '2', FizzBuzz(2)
-    assert_equal "Fizz", FizzBuzz(3)
-    assert_equal "4", FizzBuzz(4)
-    assert_equal "Buzz", FizzBuzz(5)
-    assert_equal "Fizz", FizzBuzz(6)
-    assert_equal "FizzBuzz", FizzBuzz(15)
-  end
-end
